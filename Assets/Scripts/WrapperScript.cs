@@ -5,16 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class WrapperScript : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
     public void NextScene()
     {
         Scene scene = SceneManager.GetActiveScene();
@@ -29,5 +19,10 @@ public class WrapperScript : MonoBehaviour {
     public void MainMenu()
     {
         SceneManager.LoadScene("TitleScene");
+    }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameOverScene");
     }
 }

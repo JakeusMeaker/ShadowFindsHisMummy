@@ -11,6 +11,8 @@ public class Fear : MonoBehaviour
     private float fillRate;
     private float fill;
     [SerializeField] float startFillTimeInSeconds;
+    [SerializeField] WrapperScript sceneManager;
+
 
     // Use this for initialization
     void Start()
@@ -23,6 +25,12 @@ public class Fear : MonoBehaviour
     {
         fill += fillRate;
         fearMeter.fillAmount = fill;
+        Debug.Log(fill);
+        if (fearMeter.fillAmount == 1)
+        {
+            Debug.Log("GameOver");
+            sceneManager.GameOver();
+        }
     }
 
     public void ChangeFillRate(float NewFillTime)
