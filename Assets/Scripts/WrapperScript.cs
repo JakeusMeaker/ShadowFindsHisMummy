@@ -25,4 +25,14 @@ public class WrapperScript : MonoBehaviour {
     {
         SceneManager.LoadScene("GameOverScene");
     }
+
+    public void Win()
+    {
+        SceneManager.LoadScene("WinScene");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

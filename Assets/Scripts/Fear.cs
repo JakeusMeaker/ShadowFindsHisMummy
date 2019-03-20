@@ -25,7 +25,7 @@ public class Fear : MonoBehaviour
     {
         fill += fillRate;
         fearMeter.fillAmount = fill;
-        Debug.Log(fill);
+        //Debug.Log(fill);
         if (fearMeter.fillAmount == 1)
         {
             Debug.Log("GameOver");
